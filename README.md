@@ -12,6 +12,21 @@
 
 This project converts an **Xbox One controller** into a **USB HID keyboard** by replacing the controller's mainboard with an ESP32-S3 module. The firmware scans 26 button inputs (including dual analog sticks via ADC) and maps them to keyboard keycodes, with full configuration via a Windows host application.
 
+### Hardware Photos and Diagrams
+<p align="center">
+  <img src="hardware_ref/xbox_pcb/1.jpg" alt="Xbox PCB front view" width="48%">
+  <img src="hardware_ref/xbox_pcb/2.jpg" alt="Xbox PCB reference view" width="48%">
+</p>
+#### Wiring and Configuration Diagrams
+
+<p align="center">
+  <img src="hardware_ref/xbox_pcb/xbox_diagram_dots.png" alt="Xbox controller diagram" width="80%">
+</p>
+
+<p align="center">
+  <img src="hardware_ref/xbox_pcb/按键映射.png" alt="Keyboard key mapping" width="48%">
+  <img src="hardware_ref/xbox_pcb/宏编辑.png" alt="Macro editor" width="48%">
+</p>
 ### Key Features
 
 - **26 input slots**: A/B/X/Y, LB/RB, View/Menu/Xbox/Share, L3/R3, D-pad (4), Left Stick (4), Right Stick (4), LT/RT
