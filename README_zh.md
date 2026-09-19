@@ -1,5 +1,7 @@
 # ESP32-S3 Xbox One 手柄转键盘适配器
 
+[English README](README.md)
+
 **基于 ESP32-S3 (N16R8) + TinyUSB + FreeRTOS 将 Xbox One 手柄改装为 USB HID 键盘**
 
 > **定稿版本：Ver001** —— 包含完整固件、上位机配置工具、硬件参考文档的正式发布版
