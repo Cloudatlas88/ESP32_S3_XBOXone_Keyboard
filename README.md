@@ -1,5 +1,7 @@
 # ESP32-S3 Xbox One Keyboard Adapter
 
+[中文 README](README_zh.md)
+
 **An Xbox One controller to USB HID Keyboard converter** built on ESP32-S3 (N16R8) with TinyUSB and FreeRTOS.
 
 > **Release Version: Ver001** — Final production release with full firmware, host configurator, and hardware reference documentation.
