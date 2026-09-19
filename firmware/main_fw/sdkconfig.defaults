@@ -1,0 +1,35 @@
+# ============================================================
+#  ESP32-S3 N16R8 —— 项目默认配置
+#  这些值会在 idf.py set-target / build 时写入 sdkconfig
+# ============================================================
+
+# ---- Flash：芯片实测 16MB，ESP-IDF 默认只有 2MB，必须显式覆盖 ----
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+CONFIG_ESPTOOLPY_FLASHSIZE="16MB"
+
+# ---- 分区表：自定义（NVS 64KB，供配置双槽使用）----
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+
+# ---- TinyUSB：两个 HID 接口 ----
+#   接口 0 = HID 引导键盘
+#   接口 1 = HID 厂商自定义（上位机配置通道）
+CONFIG_TINYUSB_HID_COUNT=2
+
+# 启用挂起/恢复事件（需求书 §10.3-A：主机休眠唤醒后要清空按键状态）
+CONFIG_TINYUSB_SUSPEND_CALLBACK=y
+CONFIG_TINYUSB_RESUME_CALLBACK=y
+
+# ---- FreeRTOS 时基 ----
+# ★ 必须 1000Hz：IDF 默认 100Hz 时 pdMS_TO_TICKS(1) 整数除后为 0，
+#   会让 xTaskDelayUntil 断言失败（xTimeIncrement > 0U）并无限重启。
+#   本项目的按键/摇杆扫描要求 1ms 周期，所以时基必须是 1ms。
+CONFIG_FREERTOS_HZ=1000
+
+# ---- 看门狗：关闭 IDF 自动初始化，由 fault_guard 自己控制时机 ----
+CONFIG_ESP_TASK_WDT_INIT=n
+
+# ---- 日志走 UART0（COM3），原生 USB 口专职做 HID ----
+CONFIG_ESP_CONSOLE_UART_DEFAULT=y
+CONFIG_ESP_CONSOLE_UART_NUM=0
+CONFIG_ESP_CONSOLE_UART_BAUDRATE=115200

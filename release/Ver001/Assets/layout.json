@@ -1,0 +1,916 @@
+{
+  "Version": 1,
+  "Image": "Assets/xbox-controller.png",
+  "ImageW": 2400,
+  "ImageH": 1350,
+  "SourceNote": "坐标由 tools/trace_xbox_leaders.py 追踪引线得到；端点名称经该脚本校正（设计文档早期版本有 5 个名称有误）",
+  "Slots": [
+    "A",
+    "B",
+    "X",
+    "Y",
+    "LB",
+    "RB",
+    "View",
+    "Menu",
+    "Xbox",
+    "Share",
+    "L3",
+    "R3",
+    "D↑",
+    "D↓",
+    "D←",
+    "D→",
+    "L↑",
+    "L↓",
+    "L←",
+    "L→",
+    "R↑",
+    "R↓",
+    "R←",
+    "R→",
+    "LT",
+    "RT"
+  ],
+  "Items": [
+    {
+      "Id": "a",
+      "Kind": "single",
+      "Name": "A 键",
+      "DiagramLabel": "A button",
+      "Slot": 0,
+      "Slots": [
+        0
+      ],
+      "Dot": [
+        0.6143103241920471,
+        0.5329551100730896
+      ],
+      "DotPx": [
+        1474,
+        719
+      ],
+      "LabelPx": [
+        1847,
+        796,
+        2114,
+        860
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "b",
+      "Kind": "single",
+      "Name": "B 键",
+      "DiagramLabel": "B button",
+      "Slot": 1,
+      "Slots": [
+        1
+      ],
+      "Dot": [
+        0.6451103091239929,
+        0.48013877868652344
+      ],
+      "DotPx": [
+        1548,
+        648
+      ],
+      "LabelPx": [
+        1847,
+        621,
+        2111,
+        685
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "x",
+      "Kind": "single",
+      "Name": "X 键",
+      "DiagramLabel": "X button",
+      "Slot": 2,
+      "Slots": [
+        2
+      ],
+      "Dot": [
+        0.5818055868148804,
+        0.4762306213378906
+      ],
+      "DotPx": [
+        1396,
+        643
+      ],
+      "LabelPx": [
+        1847,
+        708,
+        2111,
+        772
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "y",
+      "Kind": "single",
+      "Name": "Y 键",
+      "DiagramLabel": "Y button",
+      "Slot": 3,
+      "Slots": [
+        3
+      ],
+      "Dot": [
+        0.6123366355895996,
+        0.4220781624317169
+      ],
+      "DotPx": [
+        1470,
+        570
+      ],
+      "LabelPx": [
+        1847,
+        533,
+        2110,
+        598
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "lb",
+      "Kind": "single",
+      "Name": "LB 肩键",
+      "DiagramLabel": "Left bumper (LB)",
+      "Slot": 4,
+      "Slots": [
+        4
+      ],
+      "Dot": [
+        0.3892,
+        0.3215
+      ],
+      "DotPx": [
+        934,
+        434
+      ],
+      "LabelPx": [
+        620,
+        287,
+        959,
+        333
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "rb",
+      "Kind": "single",
+      "Name": "RB 肩键",
+      "DiagramLabel": "Right bumper (RB)",
+      "Slot": 5,
+      "Slots": [
+        5
+      ],
+      "Dot": [
+        0.5967,
+        0.3215
+      ],
+      "DotPx": [
+        1432,
+        434
+      ],
+      "LabelPx": [
+        1399,
+        287,
+        1775,
+        336
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "view",
+      "Kind": "single",
+      "Name": "View 键",
+      "DiagramLabel": "View button",
+      "Slot": 6,
+      "Slots": [
+        6
+      ],
+      "Dot": [
+        0.45796138048171997,
+        0.4764081537723541
+      ],
+      "DotPx": [
+        1099,
+        643
+      ],
+      "LabelPx": [
+        210,
+        750,
+        551,
+        814
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "menu",
+      "Kind": "single",
+      "Name": "Menu 键",
+      "DiagramLabel": "Menu button",
+      "Slot": 7,
+      "Slots": [
+        7
+      ],
+      "Dot": [
+        0.5260574817657471,
+        0.4772469401359558
+      ],
+      "DotPx": [
+        1263,
+        644
+      ],
+      "LabelPx": [
+        1847,
+        916,
+        2206,
+        980
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "xbox",
+      "Kind": "single",
+      "Name": "Xbox 键",
+      "DiagramLabel": "Xbox button",
+      "Slot": 8,
+      "Slots": [
+        8
+      ],
+      "Dot": [
+        0.4916442930698395,
+        0.38993269205093384
+      ],
+      "DotPx": [
+        1180,
+        526
+      ],
+      "LabelPx": [
+        1049,
+        184,
+        1312,
+        218
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "share",
+      "Kind": "single",
+      "Name": "Share 键",
+      "DiagramLabel": "Share button",
+      "Slot": 9,
+      "Slots": [
+        9
+      ],
+      "Dot": [
+        0.4918009042739868,
+        0.5207537412643433
+      ],
+      "DotPx": [
+        1180,
+        703
+      ],
+      "LabelPx": [
+        1044,
+        1211,
+        1319,
+        1245
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "l3",
+      "Kind": "badge",
+      "Name": "L3",
+      "DiagramLabel": "",
+      "Slot": 10,
+      "Slots": [
+        10
+      ],
+      "Dot": [
+        0.32818520069122314,
+        0.5420591831207275
+      ],
+      "DotPx": [
+        788,
+        732
+      ],
+      "LabelPx": [],
+      "Attach": "lstick",
+      "IsDir4": false,
+      "IsBadge": true
+    },
+    {
+      "Id": "r3",
+      "Kind": "badge",
+      "Name": "R3",
+      "DiagramLabel": "",
+      "Slot": 11,
+      "Slots": [
+        11
+      ],
+      "Dot": [
+        0.529226541519165,
+        0.6784020066261292
+      ],
+      "DotPx": [
+        1270,
+        916
+      ],
+      "LabelPx": [],
+      "Attach": "rstick",
+      "IsDir4": false,
+      "IsBadge": true
+    },
+    {
+      "Id": "dpad",
+      "Kind": "dir4",
+      "Name": "十字键",
+      "DiagramLabel": "(D-pad)",
+      "Slots": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "Dot": [
+        0.4283,
+        0.6163
+      ],
+      "DotPx": [
+        1028,
+        832
+      ],
+      "LabelPx": [
+        149,
+        883,
+        551,
+        986
+      ],
+      "IsDir4": true,
+      "IsBadge": false
+    },
+    {
+      "Id": "lstick",
+      "Kind": "dir4",
+      "Name": "左摇杆",
+      "DiagramLabel": "Left stick",
+      "Slots": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "Dot": [
+        0.36984336376190186,
+        0.4741000235080719
+      ],
+      "DotPx": [
+        888,
+        640
+      ],
+      "LabelPx": [
+        282,
+        615,
+        551,
+        654
+      ],
+      "IsDir4": true,
+      "IsBadge": false
+    },
+    {
+      "Id": "rstick",
+      "Kind": "dir4",
+      "Name": "右摇杆",
+      "DiagramLabel": "Right Stick",
+      "Slots": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "Dot": [
+        0.5536433458328247,
+        0.6019992828369141
+      ],
+      "DotPx": [
+        1329,
+        813
+      ],
+      "LabelPx": [
+        1847,
+        1056,
+        2158,
+        1102
+      ],
+      "IsDir4": true,
+      "IsBadge": false
+    },
+    {
+      "Id": "lt",
+      "Kind": "single",
+      "Name": "LT 扳机",
+      "DiagramLabel": "Left trigger (LT)",
+      "Slots": [
+        24
+      ],
+      "Dot": [
+        0.3333,
+        0.3719
+      ],
+      "DotPx": [
+        800,
+        502
+      ],
+      "LabelPx": [
+        273,
+        413,
+        589,
+        477
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "rt",
+      "Kind": "single",
+      "Name": "RT 扳机",
+      "DiagramLabel": "Right trigger (RT)",
+      "Slots": [
+        25
+      ],
+      "Dot": [
+        0.6508,
+        0.3719
+      ],
+      "DotPx": [
+        1562,
+        502
+      ],
+      "LabelPx": [
+        1767,
+        413,
+        2120,
+        477
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    }
+  ],
+  "Deferred": [],
+  "All": [
+    {
+      "Id": "a",
+      "Kind": "single",
+      "Name": "A 键",
+      "DiagramLabel": "A button",
+      "Slot": 0,
+      "Slots": [
+        0
+      ],
+      "Dot": [
+        0.6143103241920471,
+        0.5329551100730896
+      ],
+      "DotPx": [
+        1474,
+        719
+      ],
+      "LabelPx": [
+        1847,
+        796,
+        2114,
+        860
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "b",
+      "Kind": "single",
+      "Name": "B 键",
+      "DiagramLabel": "B button",
+      "Slot": 1,
+      "Slots": [
+        1
+      ],
+      "Dot": [
+        0.6451103091239929,
+        0.48013877868652344
+      ],
+      "DotPx": [
+        1548,
+        648
+      ],
+      "LabelPx": [
+        1847,
+        621,
+        2111,
+        685
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "x",
+      "Kind": "single",
+      "Name": "X 键",
+      "DiagramLabel": "X button",
+      "Slot": 2,
+      "Slots": [
+        2
+      ],
+      "Dot": [
+        0.5818055868148804,
+        0.4762306213378906
+      ],
+      "DotPx": [
+        1396,
+        643
+      ],
+      "LabelPx": [
+        1847,
+        708,
+        2111,
+        772
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "y",
+      "Kind": "single",
+      "Name": "Y 键",
+      "DiagramLabel": "Y button",
+      "Slot": 3,
+      "Slots": [
+        3
+      ],
+      "Dot": [
+        0.6123366355895996,
+        0.4220781624317169
+      ],
+      "DotPx": [
+        1470,
+        570
+      ],
+      "LabelPx": [
+        1847,
+        533,
+        2110,
+        598
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "lb",
+      "Kind": "single",
+      "Name": "LB 肩键",
+      "DiagramLabel": "Left bumper (LB)",
+      "Slot": 4,
+      "Slots": [
+        4
+      ],
+      "Dot": [
+        0.3892,
+        0.3215
+      ],
+      "DotPx": [
+        934,
+        434
+      ],
+      "LabelPx": [
+        620,
+        287,
+        959,
+        333
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "rb",
+      "Kind": "single",
+      "Name": "RB 肩键",
+      "DiagramLabel": "Right bumper (RB)",
+      "Slot": 5,
+      "Slots": [
+        5
+      ],
+      "Dot": [
+        0.5967,
+        0.3215
+      ],
+      "DotPx": [
+        1432,
+        434
+      ],
+      "LabelPx": [
+        1399,
+        287,
+        1775,
+        336
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "view",
+      "Kind": "single",
+      "Name": "View 键",
+      "DiagramLabel": "View button",
+      "Slot": 6,
+      "Slots": [
+        6
+      ],
+      "Dot": [
+        0.45796138048171997,
+        0.4764081537723541
+      ],
+      "DotPx": [
+        1099,
+        643
+      ],
+      "LabelPx": [
+        210,
+        750,
+        551,
+        814
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "menu",
+      "Kind": "single",
+      "Name": "Menu 键",
+      "DiagramLabel": "Menu button",
+      "Slot": 7,
+      "Slots": [
+        7
+      ],
+      "Dot": [
+        0.5260574817657471,
+        0.4772469401359558
+      ],
+      "DotPx": [
+        1263,
+        644
+      ],
+      "LabelPx": [
+        1847,
+        916,
+        2206,
+        980
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "xbox",
+      "Kind": "single",
+      "Name": "Xbox 键",
+      "DiagramLabel": "Xbox button",
+      "Slot": 8,
+      "Slots": [
+        8
+      ],
+      "Dot": [
+        0.4916442930698395,
+        0.38993269205093384
+      ],
+      "DotPx": [
+        1180,
+        526
+      ],
+      "LabelPx": [
+        1049,
+        184,
+        1312,
+        218
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "share",
+      "Kind": "single",
+      "Name": "Share 键",
+      "DiagramLabel": "Share button",
+      "Slot": 9,
+      "Slots": [
+        9
+      ],
+      "Dot": [
+        0.4918009042739868,
+        0.5207537412643433
+      ],
+      "DotPx": [
+        1180,
+        703
+      ],
+      "LabelPx": [
+        1044,
+        1211,
+        1319,
+        1245
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "l3",
+      "Kind": "badge",
+      "Name": "L3",
+      "DiagramLabel": "",
+      "Slot": 10,
+      "Slots": [
+        10
+      ],
+      "Dot": [
+        0.32818520069122314,
+        0.5420591831207275
+      ],
+      "DotPx": [
+        788,
+        732
+      ],
+      "LabelPx": [],
+      "Attach": "lstick",
+      "IsDir4": false,
+      "IsBadge": true
+    },
+    {
+      "Id": "r3",
+      "Kind": "badge",
+      "Name": "R3",
+      "DiagramLabel": "",
+      "Slot": 11,
+      "Slots": [
+        11
+      ],
+      "Dot": [
+        0.529226541519165,
+        0.6784020066261292
+      ],
+      "DotPx": [
+        1270,
+        916
+      ],
+      "LabelPx": [],
+      "Attach": "rstick",
+      "IsDir4": false,
+      "IsBadge": true
+    },
+    {
+      "Id": "dpad",
+      "Kind": "dir4",
+      "Name": "十字键",
+      "DiagramLabel": "(D-pad)",
+      "Slots": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "Dot": [
+        0.4283,
+        0.6163
+      ],
+      "DotPx": [
+        1028,
+        832
+      ],
+      "LabelPx": [
+        149,
+        883,
+        551,
+        986
+      ],
+      "IsDir4": true,
+      "IsBadge": false
+    },
+    {
+      "Id": "lstick",
+      "Kind": "dir4",
+      "Name": "左摇杆",
+      "DiagramLabel": "Left stick",
+      "Slots": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "Dot": [
+        0.36984336376190186,
+        0.4741000235080719
+      ],
+      "DotPx": [
+        888,
+        640
+      ],
+      "LabelPx": [
+        282,
+        615,
+        551,
+        654
+      ],
+      "IsDir4": true,
+      "IsBadge": false
+    },
+    {
+      "Id": "rstick",
+      "Kind": "dir4",
+      "Name": "右摇杆",
+      "DiagramLabel": "Right Stick",
+      "Slots": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "Dot": [
+        0.5536433458328247,
+        0.6019992828369141
+      ],
+      "DotPx": [
+        1329,
+        813
+      ],
+      "LabelPx": [
+        1847,
+        1056,
+        2158,
+        1102
+      ],
+      "IsDir4": true,
+      "IsBadge": false
+    },
+    {
+      "Id": "lt",
+      "Kind": "single",
+      "Name": "LT 扳机",
+      "DiagramLabel": "Left trigger (LT)",
+      "Slots": [
+        24
+      ],
+      "Dot": [
+        0.3333,
+        0.3719
+      ],
+      "DotPx": [
+        800,
+        502
+      ],
+      "LabelPx": [
+        273,
+        413,
+        589,
+        477
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    },
+    {
+      "Id": "rt",
+      "Kind": "single",
+      "Name": "RT 扳机",
+      "DiagramLabel": "Right trigger (RT)",
+      "Slots": [
+        25
+      ],
+      "Dot": [
+        0.6508,
+        0.3719
+      ],
+      "DotPx": [
+        1562,
+        502
+      ],
+      "LabelPx": [
+        1767,
+        413,
+        2120,
+        477
+      ],
+      "IsDir4": false,
+      "IsBadge": false
+    }
+  ]
+}

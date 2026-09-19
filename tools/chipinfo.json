@@ -1,0 +1,22 @@
+{
+  "_comment": "本机目标板固定信息，由 tools/flash.ps1 写入每次烧录的 manifest",
+  "board": "ESP32-S3 N16R8 开发板（双 Type-C 口：UART/CH343 + 原生 USB-OTG）",
+  "chip": "ESP32-S3 (QFN56) revision v0.2",
+  "features": "Wi-Fi, BT 5 (LE), Dual Core + LP Core, 240MHz, Embedded PSRAM 8MB (AP_3v3)",
+  "crystal": "40MHz",
+  "flash_size": "16MB",
+  "flash_chip": "Micron, JEDEC 0x20 0x4018, Quad, 3.3V",
+  "mac": "44:bd:8d:6a:ba:e8",
+  "uart_port": "COM3 (CH343 USB-UART 桥，用于烧录 + 串口日志)",
+  "usb_port": "原生 USB-OTG (GPIO19/20)，ROM 模式下为 COM4 / VID_303A&PID_1001",
+  "wiring": {
+    "joystick_vrx": "GPIO1 (ADC1_CH0)",
+    "joystick_vry": "GPIO2 (ADC1_CH1)",
+    "joystick_sw": "GPIO42",
+    "button1": "GPIO41",
+    "button2": "GPIO40",
+    "button3": "GPIO39",
+    "button4": "GPIO38",
+    "joystick_power": "3V3（重要：不可接 5V，ESP32-S3 GPIO 绝对最大 3.6V）"
+  }
+}

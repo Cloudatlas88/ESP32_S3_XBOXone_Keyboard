@@ -1,0 +1,197 @@
+[
+ {
+  "dot": 0,
+  "far": [
+   933,
+   350
+  ],
+  "touched": [
+   0
+  ],
+  "best": 1,
+  "best_label": "Left bumper (LB)",
+  "bestdist": 17.0
+ },
+ {
+  "dot": 1,
+  "far": [
+   1434,
+   350
+  ],
+  "touched": [
+   1
+  ],
+  "best": 2,
+  "best_label": "Right bumper (RB)",
+  "bestdist": 14.0
+ },
+ {
+  "dot": 2,
+  "far": [
+   1183,
+   254
+  ],
+  "touched": [
+   2
+  ],
+  "best": 0,
+  "best_label": "Xbox button",
+  "bestdist": 36.0
+ },
+ {
+  "dot": 3,
+  "far": [
+   611,
+   444
+  ],
+  "touched": [
+   3
+  ],
+  "best": 3,
+  "best_label": "Left trigger (LT)",
+  "bestdist": 22.0
+ },
+ {
+  "dot": 4,
+  "far": [
+   1751,
+   443
+  ],
+  "touched": [
+   4
+  ],
+  "best": 4,
+  "best_label": "Right trigger (RT)",
+  "bestdist": 16.0
+ },
+ {
+  "dot": 5,
+  "far": [
+   1825,
+   566
+  ],
+  "touched": [
+   5
+  ],
+  "best": 5,
+  "best_label": "Y button",
+  "bestdist": 22.0
+ },
+ {
+  "dot": 6,
+  "far": [
+   571,
+   641
+  ],
+  "touched": [
+   6
+  ],
+  "best": 6,
+  "best_label": "Left stick",
+  "bestdist": 20.0
+ },
+ {
+  "dot": 7,
+  "far": [
+   1823,
+   742
+  ],
+  "touched": [
+   7
+  ],
+  "best": 8,
+  "best_label": "X button",
+  "bestdist": 24.0
+ },
+ {
+  "dot": 8,
+  "far": [
+   573,
+   787
+  ],
+  "touched": [
+   8
+  ],
+  "best": 9,
+  "best_label": "View button",
+  "bestdist": 22.0
+ },
+ {
+  "dot": 9,
+  "far": [
+   1826,
+   654
+  ],
+  "touched": [
+   9
+  ],
+  "best": 7,
+  "best_label": "B button",
+  "bestdist": 21.0
+ },
+ {
+  "dot": 10,
+  "far": [
+   1835,
+   946
+  ],
+  "touched": [
+   10
+  ],
+  "best": 13,
+  "best_label": "Menu button",
+  "bestdist": 12.0
+ },
+ {
+  "dot": 11,
+  "far": [
+   1181,
+   1096
+  ],
+  "touched": [
+   11
+  ],
+  "best": 15,
+  "best_label": "Share button",
+  "bestdist": 115.0
+ },
+ {
+  "dot": 12,
+  "far": [
+   1825,
+   830
+  ],
+  "touched": [
+   12
+  ],
+  "best": 10,
+  "best_label": "A button",
+  "bestdist": 22.0
+ },
+ {
+  "dot": 13,
+  "far": [
+   1838,
+   1078
+  ],
+  "touched": [
+   13
+  ],
+  "best": 14,
+  "best_label": "Right Stick",
+  "bestdist": 9.0
+ },
+ {
+  "dot": 14,
+  "far": [
+   569,
+   927
+  ],
+  "touched": [
+   14
+  ],
+  "best": 12,
+  "best_label": "(D-pad)",
+  "bestdist": 18.0
+ }
+]

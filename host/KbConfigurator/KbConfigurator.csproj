@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>KbConfigurator</AssemblyName>
+    <RootNamespace>KbConfigurator</RootNamespace>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <!-- 单文件自包含发布时把原生库一起带上（终端用户零安装）-->
+    <SatelliteResourceLanguages>zh-Hans;en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <!-- ============================================================
+       hidapi 原生库（官方 libusb/hidapi 0.15.0 Windows x64 构建）
+       放到输出目录根部并改名为 hidapi.dll，P/Invoke 才能按名字找到。
+       ============================================================ -->
+  <ItemGroup>
+    <!-- ★ 用 Content 而不是 None：实测 `None` 即使带 CopyToPublishDirectory，
+         `dotnet publish` 也不会把它发出去（build 会，publish 不会）——
+         结果就是发布出来的 exe 双击能开、但连不上设备，
+         报错只有一句"找不到指定的模块"。 -->
+    <Content Include="..\native\hidapi-x64.dll">
+      <Link>hidapi.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <!-- ============================================================
+       Assets：手柄示意图 + layout.json
+       ★ 必须显式声明 —— SDK 默认只把 .png 之类的当 None 但不复制，
+         layout.json 更是完全不会被复制。漏了的话运行期找不到文件，
+         表现是"图不显示、页面空白"，而编译期一点提示都没有。
+       ★ 用 PreserveNewest 而不是 Always：校准模式会在运行期写回
+         layout.json，Always 会在下次编译时把它冲掉。
+       ============================================================ -->
+  <ItemGroup>
+    <None Include="Assets\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <!-- ★ 同上：不发出去的话成品一运行就是空白页 -->
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
